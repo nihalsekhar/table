@@ -1,0 +1,182 @@
+
+SQL*Plus: Release 11.2.0.2.0 Production on Sat Feb 2 12:12:46 2019
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+SQL> connect system/Capgemini123
+Connected.
+SQL> create table trainer_details(id number primary key, name varchar2(20) not n
+ull, location varchar2(20) not null, designation varchar2(20), technology varcha
+r2(20), technology varchar2(20), contactNo varchar2(10));
+create table trainer_details(id number primary key, name varchar2(20) not null,
+location varchar2(20) not null, designation varchar2(20), technology varchar2(20
+), technology varchar2(20), contactNo varchar2(10))
+
+
+   *
+ERROR at line 1:
+ORA-00957: duplicate column name
+
+
+SQL> create table trainer_details(id number primary key, name varchar2(20) not n
+ull, location varchar2(20) not null, designation varchar2(20), technology varcha
+r2(20), contactNo varchar2(10));
+
+Table created.
+
+SQL> insert into trainer_details values(&id, '&name','&location','&designation',
+ '&technology','&contactNo');
+Enter value for id: 143421
+Enter value for name: Kavita
+Enter value for location: Mumbai
+Enter value for designation: senior consultant
+Enter value for technology: jee
+Enter value for contactno: 9898786543
+old   1: insert into trainer_details values(&id, '&name','&location','&designati
+on', '&technology','&contactNo')
+new   1: insert into trainer_details values(143421, 'Kavita','Mumbai','senior co
+nsultant', 'jee','9898786543')
+
+1 row created.
+
+SQL> /
+Enter value for id: 143412
+Enter value for name: Anjulata
+Enter value for location: Pune
+Enter value for designation: senior consultant
+Enter value for technology: jee
+Enter value for contactno: 7878654532
+old   1: insert into trainer_details values(&id, '&name','&location','&designati
+on', '&technology','&contactNo')
+new   1: insert into trainer_details values(143412, 'Anjulata','Pune','senior co
+nsultant', 'jee','7878654532')
+
+1 row created.
+
+SQL> /
+Enter value for id: 143231
+Enter value for name: Tanmaya
+Enter value for location: Bangalore
+Enter value for designation: senior consultant
+Enter value for technology: jee
+Enter value for contactno: 909085432
+old   1: insert into trainer_details values(&id, '&name','&location','&designati
+on', '&technology','&contactNo')
+new   1: insert into trainer_details values(143231, 'Tanmaya','Bangalore','senio
+r consultant', 'jee','909085432')
+
+1 row created.
+
+SQL> /
+Enter value for id: 165632
+Enter value for name: Vaishali
+Enter value for location: Pune
+Enter value for designation: senior consultant
+Enter value for technology: cloud
+Enter value for contactno: 9192936545
+old   1: insert into trainer_details values(&id, '&name','&location','&designati
+on', '&technology','&contactNo')
+new   1: insert into trainer_details values(165632, 'Vaishali','Pune','senior co
+nsultant', 'cloud','9192936545')
+
+1 row created.
+
+SQL> /
+Enter value for id: 134221
+Enter value for name: Bharati
+Enter value for location: Mumbai
+Enter value for designation: consultant
+Enter value for technology: jee
+Enter value for contactno: 9089786756
+old   1: insert into trainer_details values(&id, '&name','&location','&designati
+on', '&technology','&contactNo')
+new   1: insert into trainer_details values(134221, 'Bharati','Mumbai','consulta
+nt', 'jee','9089786756')
+
+1 row created.
+
+SQL> /
+Enter value for id: 167612
+Enter value for name: Kavita
+Enter value for location: Hyderabad
+Enter value for designation: consultant
+Enter value for technology: cloud
+Enter value for contactno: 8787898908
+old   1: insert into trainer_details values(&id, '&name','&location','&designati
+on', '&technology','&contactNo')
+new   1: insert into trainer_details values(167612, 'Kavita','Hyderabad','consul
+tant', 'cloud','8787898908')
+
+1 row created.
+
+SQL> /
+Enter value for id: 154534
+Enter value for name: Kathir
+Enter value for location: Chennai
+Enter value for designation: consultant
+Enter value for technology: cloud
+Enter value for contactno: 9087651212
+old   1: insert into trainer_details values(&id, '&name','&location','&designati
+on', '&technology','&contactNo')
+new   1: insert into trainer_details values(154534, 'Kathir','Chennai','consulta
+nt', 'cloud','9087651212')
+
+1 row created.
+
+SQL> /
+Enter value for id: 156507
+Enter value for name: Pavan
+Enter value for location: Hyderabad
+Enter value for designation: consultant
+Enter value for technology: jee
+Enter value for contactno: 8787878765
+old   1: insert into trainer_details values(&id, '&name','&location','&designati
+on', '&technology','&contactNo')
+new   1: insert into trainer_details values(156507, 'Pavan','Hyderabad','consult
+ant', 'jee','8787878765')
+
+1 row created.
+
+SQL> /
+Enter value for id: 165123
+Enter value for name: Rajesh
+Enter value for location: Hyderabad
+Enter value for designation: consultant
+Enter value for technology: mainframes
+Enter value for contactno: 9293949594
+old   1: insert into trainer_details values(&id, '&name','&location','&designati
+on', '&technology','&contactNo')
+new   1: insert into trainer_details values(165123, 'Rajesh','Hyderabad','consul
+tant', 'mainframes','9293949594')
+
+1 row created.
+
+SQL> /
+Enter value for id: 434342
+Enter value for name: Sankar
+Enter value for location: Bangalore
+Enter value for designation: consultant
+Enter value for technology: mainframes
+Enter value for contactno: 9796678765
+old   1: insert into trainer_details values(&id, '&name','&location','&designati
+on', '&technology','&contactNo')
+new   1: insert into trainer_details values(434342, 'Sankar','Bangalore','consul
+tant', 'mainframes','9796678765')
+
+1 row created.
+
+SQL> /
+Enter value for id: 189786
+Enter value for name: Rahul
+Enter value for location: Bangalore
+Enter value for designation: consultant
+Enter value for technology: mainframes
+Enter value for contactno: 9292939495
+old   1: insert into trainer_details values(&id, '&name','&location','&designati
+on', '&technology','&contactNo')
+new   1: insert into trainer_details values(189786, 'Rahul','Bangalore','consult
+ant', 'mainframes','9292939495')
+
+1 row created.
+
+SQL>
