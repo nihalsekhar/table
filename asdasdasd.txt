@@ -1,0 +1,37 @@
+ create table trainer_details(
+ id number primary key,
+ name varchar2(20) not null,
+ location varchar2(20) not null,
+ designation varchar2(20),
+ technology varchar2(20),
+ contactNo varchar2(10));
+
+insert into trainer_details values(143421,'Kavita','Mumbai','senior consultant','jee','9898786543');
+
+insert into trainer_details values(143412,'Anjulata','Pune','senior consultant','jee','7878654532');
+
+
+insert into trainer_details values(143231,'Tanmaya','Bangalore','senior consultant','jee','9090985432');
+
+insert into trainer_details values(165632,'vaishali','Pune','senior consultant','cloud','9192936545');
+
+
+insert into trainer_details values(134221,'Bharathi','Mumbai','consultant','jee','9089786756');
+
+
+insert into trainer_details values(167612,'Kavitha','Hyderabad','consultant','cloud','8787898908');
+
+
+insert into trainer_details values(154534,'Kathir','Chennai','consultant','cloud','9087651212');
+
+
+insert into trainer_details values(156507,'Pavan','Hyderabad','consultant','jee','8787878765');
+
+
+insert into trainer_details values(165123,'Rajesh','Hyderabad','consultant','mainframes','9293949594');
+
+
+insert into trainer_details values(434342,'Sankar','Bangalore','consultant','mainframes','9796678765');
+
+
+insert into trainer_details values(189786,'Rahul','Bangalore','consultant','mainframes','9292939495');
